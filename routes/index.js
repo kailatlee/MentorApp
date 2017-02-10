@@ -6,36 +6,36 @@
 exports.view = function(req, res){
   res.render('index', {
     'projects': [
-      { 'name': 'Hometown - St. Paul, MN',
-        'image': 'imgres.jpg',
+      { 'name': 'John Doe',
+        'image': 'head.jpg',
         'id': 'project1'
       },
-      { 'name': 'School - UCSD',
-        'image': 'images.png',
+      { 'name': 'Jane Doe',
+        'image': 'head.jpg',
         'id': 'project2'
       },
-      { 'name': 'Favorite Dog - Golden Doodle',
-        'image': 'imgres-1.jpg',
+      { 'name': 'Kaila Lee',
+        'image': 'head.jpg',
         'id': 'project3'
       },
-      { 'name': 'Favorite Sport - Soccer',
-        'image': 'imgres-2.jpg',
+      { 'name': 'Jenn Chan',
+        'image': 'head.jpg',
         'id': 'project4'
       },
-      { 'name': 'Favorite Food - Mac n Cheese',
-        'image': 'imgres-3.jpg',
+      { 'name': 'Julia Connly',
+        'image': 'head.jpg',
         'id': 'project5'
       },
-      { 'name': 'Favorite Person - Ellen',
-        'image': 'imgres-4.jpg',
+      { 'name': 'Kobe Bryant',
+        'image': 'head.jpg',
         'id': 'project6'
       },
-      { 'name': 'Favorite Store - Target',
-        'image': 'imgres.png',
+      { 'name': 'Ellen Degeneres',
+        'image': 'head.jpg',
         'id': 'project7'
       },
-      { 'name': 'Favorite Color - Purple',
-        'image': 'imgres-5.jpg',
+      { 'name': 'Steph Curry',
+        'image': 'head.jpg',
         'id': 'project8'
       }
     ]  

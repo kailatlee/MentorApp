@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>HCI Project Portfolio</title>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <!-- this is a comment in HTML -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->        
+</head>
+
+<body>
+  <div class="container">
+    <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+    <!-- p means paragraph -->
+    <div class="jumbotron">
+      <a href="/"><img src="../images/home.png" alt="Message image" class="img"></a>
+<!--      <a href="/messages"><img src="images/logo.jpg" alt="Message image" class="img2"></a> -->
+      <h1>MentorApp</h1>
+      <p>Find a Mentor &middot; Find a Mentee &middot; Team 1</p>
+    </div>
+
+<!--       DELETE THIS LATER -->
+      <a href="/">Go Home</a>
+<!--    <ol>
+    {{#each projects}}
+      <li><a href="#project{{id}}">{{name}}</a></li>
+    {{/each}}
+  </ol> -->
+
+<!--    <a href="/messages">View Messages</a>
+ -->
+    <center><h4>MESSAGES:</h4></center>
+    <!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
+    <!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
+    <!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+
+  <!-- SEND MESSAGE OPTION - LAB 5 FOR REFERENCE
+  <form id="addFriendForm" role="form" method="get" action="/add">
+    <h3>Send a Message</h3>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="description">Message:</label>
+        <input type="text" class="form-control" id="description" placeholder="Message" name="description">
+      </div>
+      <input type="submit" id="submitBtn" class="btn btn-default" value="Send Message"></input>
+  </form> -->
+
+<hr>
+
+<div class="container">
+    <a href="viewmessages/">
+          <img src="../images/head.jpg" class="img">
+        <h1>John Doe</h1>
+        <p>Message Number One Preview Here</p>
+      </a>
+</div>
+
+<hr>
+
+<div class="container">
+    <a href="viewmessages/">
+          <img src="../images/head.jpg" class="img">
+        <h1>Jane Doe</h1>
+        <p>Message Number Two Preview Here</p>
+      </a>
+</div>
+
+<hr>
+
+<div class="container">
+  <a href="viewmessages/">
+          <img src="../images/head.jpg" class="img">
+        <h1>Kaila Lee</h1>
+        <p>Message Number Three Preview Here</p>
+      </a> 
+</div>
+
+<hr>
+   <!--  {{#each projects}}
+    <div class="project" id="{{id}}">
+      <a href="project/{{name}}" class="thumbnail">
+        <img src="images/{{image}}" class="img">
+        <p>{{name}}</p>
+      </a>
+    </div>
+    {{/each}} -->
+
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
