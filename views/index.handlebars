@@ -31,38 +31,24 @@
 			<p>Find a Mentor &middot; Find a Mentee &middot; Team 1</p>
 		</div>
 
-<!-- 		<ol>
-		{{#each projects}}
-			<li><a href="#project{{id}}">{{name}}</a></li>
-		{{/each}}
-	</ol> -->
-
-<!-- 		<a href="/messages">View Messages</a>
- -->
 		<center><h4>MATCHES:</h4></center>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		{{#each projects}}
-		<div class="project" id="{{id}}">
-			<a href="project/{{name}}" class="thumbnail">
-				<img src="images/{{image}}" class="img">
-				<p>{{name}}</p>
-			</a>
-		</div>
-		{{/each}}
-		</div>
 
+{{#each matchesList}}
+<div class="project">
+	<a href="project/{{name}}" class="thumbnail">
+		<img src="{{image}}" class="img">
+		<p>{{name}}</p>
+	</a>
+</div>
+{{/each}}
 
-
-
+</div>
 
 <!-- NAV STARTS HERE -->
 
-<center>
-<h1>My Resume</h1>
-<link rel="stylesheet" type="text/css" href="csstrial.css">
-<center>
 
 <div id="nav">
 <!-- <img src="../images/logo.jpg" class="logo">
@@ -77,18 +63,18 @@
 </div>
 
 
-<nav>
+<!-- <nav>
 <ul>
 <li><a href="home.html" target='MYHOME'>Home</a></li>
 <li><a href="cmon.html" target='MYHOME'>My Profile</a></li>
 <li><a href="#">Messages</a></li>
 <li><a href="#">FAQ</a></li>
 </ul>
-</nav>
+</nav> -->
 
 
-<iframe src="home.html" name="MYHOME" height="550" width="700"
-frameborder="0">
+<!-- <iframe src="home.html" name="MYHOME" height="550" width="700"
+frameborder="0"> -->
 
 <!-- END NAV HERE -->
 
