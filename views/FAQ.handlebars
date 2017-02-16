@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>MentorApp</title>	
+	<title>HCI Project Portfolio</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -16,38 +16,26 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->        
+
 </head>
 
 <body>
 		<div class="jumbotron">
-<!-- 			<a href="/"><img src="images/logo.jpg" alt="Message image" class="img"></a> -->
-			<a href="/"><img class="img"></a>
+			<a href="messages/"><img src="images/messageIcon.png" alt="Message image" class="img"></a>
 			<h1>MentorApp</h1>
-			<p>Find a Mentor &middot; Find a Mentee </p>
+			<p>Find a Mentor &middot; Find a Mentee</p>
 		</div>
 
-<div class="container"> 
-		<center><h4>MATCHES:</h4></center>
-
-{{#each matchesList}}
-<div class="project">
-	<a href="project/{{name}}" class="thumbnail">
-		<img src="{{image}}" class="img">
-		<p>{{name}}</p>
-	</a>
-</div>
-{{/each}}
-
-</div>
+		<center><h4>FAQ:</h4></center>
 
 <!-- NAV STARTS HERE -->
 <div id="nav">
 <ul id="navigation">
 <ul id="navigation">
-<li><a href="/"><img src="images/homeicon.png" alt="Home image" class="homeimg"></a></li>
-<li><a href="messages/"><img src="images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
-<li><a href="settings/"><img src="images/settings.png" alt="Settings image" class="settingsimg"></a></li>
-<li><a href="FAQ/">FAQ</a></li>
+<li><a href="/"><img src="../images/homeicon.png" alt="Home image" class="homeimg"></a></li>
+<li><a href="../messages/"><img src="../images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
+<li><a href="../settings/"><img src="../images/settings.png" alt="Settings image" class="settingsimg"></a></li>
+<li><a href="">FAQ</a></li>
 </ul>
 </div>
 <!-- NAV ENDS HERE -->

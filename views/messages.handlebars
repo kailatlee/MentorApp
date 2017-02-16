@@ -19,30 +19,14 @@
 </head>
 
 <body>
-  <div class="container">
-    <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-    <!-- p means paragraph -->
     <div class="jumbotron">
       <a href="/"><img src="../images/home.png" alt="Message image" class="img"></a>
-<!--      <a href="/messages"><img src="images/logo.jpg" alt="Message image" class="img2"></a> -->
       <h1>MentorApp</h1>
-      <p>Find a Mentor &middot; Find a Mentee &middot; Team 1</p>
+      <p>Find a Mentor &middot; Find a Mentee </p>
     </div>
 
-<!--       DELETE THIS LATER -->
-      <a href="/">Go Home</a>
-<!--    <ol>
-    {{#each projects}}
-      <li><a href="#project{{id}}">{{name}}</a></li>
-    {{/each}}
-  </ol> -->
-
-<!--    <a href="/messages">View Messages</a>
- -->
+   <div class="container">
     <center><h4>MESSAGES:</h4></center>
-    <!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-    <!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-    <!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 
   <!-- SEND MESSAGE OPTION - LAB 5 FOR REFERENCE
   <form id="addFriendForm" role="form" method="get" action="/add">
@@ -89,14 +73,19 @@
 </div>
 
 <hr>
-   <!--  {{#each projects}}
-    <div class="project" id="{{id}}">
-      <a href="project/{{name}}" class="thumbnail">
-        <img src="images/{{image}}" class="img">
-        <p>{{name}}</p>
-      </a>
-    </div>
-    {{/each}} -->
+</div>
+
+<!-- NAV STARTS HERE -->
+<div id="nav">
+<ul id="navigation">
+<ul id="navigation">
+<li><a href="/"><img src="../images/homeicon.png" alt="Home image" class="homeimg"></a></li>
+<li><a href=""><img src="../images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
+<li><a href="../settings/"><img src="../images/settings.png" alt="Settings image" class="settingsimg"></a></li>
+<li><a href="../FAQ/">FAQ</a></li>
+</ul>
+</div>
+<!-- NAV ENDS HERE -->
 
 
   <script src="https://code.jquery.com/jquery.js"></script>
