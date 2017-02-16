@@ -16,6 +16,7 @@ var messages = require('./routes/messages');
 var viewmessages = require('./routes/viewmessages');
 var FAQ = require('./routes/FAQ');
 var settings = require('./routes/settings');
+var login = require('./routes/login');
 
 var app = express();
 
@@ -48,6 +49,7 @@ app.get('/messages', messages.viewMessages);
 app.get('/messages/viewmessages', viewmessages.viewViewmessages);
 app.get('/FAQ', FAQ.viewFAQ);
 app.get('/settings', settings.viewSettings);
+app.get('/login', login.viewLogin);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
