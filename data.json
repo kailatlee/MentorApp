@@ -2,13 +2,13 @@
 	
 	"matchesList":
 	[
-		{"name": "John Doe", "image": "http://mentorapp5.herokuapp.com/images/head.jpg"},
-		{"name": "Jane Doe", "image": "http://mentorapp5.herokuapp.com/images/head.jpg"},
-		{"name": "Kaila Lee", "image": "http://mentorapp5.herokuapp.com/images/head.jpg"},
-		{"name": "Jenn Chan", "image": "http://mentorapp5.herokuapp.com/images/head.jpg"},
-		{"name": "Julia Connly", "image": "http://mentorapp5.herokuapp.com/images/head.jpg"},
-		{"name": "Kobe Bryant", "image": "http://mentorapp5.herokuapp.com/images/head.jpg"},
-		{"name": "Ellen Degeneres", "image": "http://mentorapp5.herokuapp.com/images/head.jpg"},
-		{"name": "Steph Curry", "image": "http://mentorapp5.herokuapp.com/images/head.jpg"}
+		{"name": "John Doe", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "major": "Cognitive Science B.S."},
+		{"name": "Jane Doe", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "major": "Computer Science"},
+		{"name": "Kaila Lee", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "major": "Computer Science"},
+		{"name": "Jenn Chan", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "major": "Computer Science"},
+		{"name": "Julia Connly", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "major": "Computer Science"},
+		{"name": "Kobe Bryant", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "major": "Computer Science"},
+		{"name": "Ellen Degeneres", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "major": "Computer Science"},
+		{"name": "Steph Curry", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "major": "Computer Science"}
 	]
 }
