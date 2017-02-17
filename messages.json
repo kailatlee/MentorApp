@@ -1,0 +1,9 @@
+{
+	
+	"messagesList":
+	[
+		{"name": "Kaila Lee", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "Hey!"},
+		{"name": "Jenn Chan", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "Hello."},
+		{"name": "Julia Connly", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "How are you doing?"}
+	]
+}

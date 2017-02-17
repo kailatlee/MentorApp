@@ -26,8 +26,8 @@
     </div>
 
    <div class="container">
-    <center><h4>MESSAGES:</h4></center>
-
+    <center><img src="../images/messageIcon.png" alt="Message image" class="mailimg"></center>
+</div>
   <!-- SEND MESSAGE OPTION - LAB 5 FOR REFERENCE
   <form id="addFriendForm" role="form" method="get" action="/add">
     <h3>Send a Message</h3>
@@ -43,34 +43,16 @@
   </form> -->
 
 <hr>
-
-<div class="container">
-    <a href="viewmessages/">
-          <img src="../images/head.jpg" class="img">
-        <h1>John Doe</h1>
-        <p>Message Number One Preview Here</p>
-      </a>
-</div>
-
-<hr>
-
-<div class="container">
-    <a href="viewmessages/">
-          <img src="../images/head.jpg" class="img">
-        <h1>Jane Doe</h1>
-        <p>Message Number Two Preview Here</p>
-      </a>
-</div>
-
-<hr>
-
-<div class="container">
-  <a href="viewmessages/">
-          <img src="../images/head.jpg" class="img">
-        <h1>Kaila Lee</h1>
-        <p>Message Number Three Preview Here</p>
-      </a> 
-</div>
+  
+  {{#each messagesList}}
+  <div class="project">
+    <a href="viewmessages/{{name}}" class="thumbnail">
+      <img src="{{image}}" class="profilepic">
+      <p>{{name}}</p>
+      <p>{{message}}</p>
+    </a>
+  </div>
+  {{/each}}
 
 <hr>
 </div>

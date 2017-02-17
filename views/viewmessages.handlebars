@@ -19,7 +19,6 @@
 </head>
 
 <body>
-  <div class="container">
     <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
     <!-- p means paragraph -->
     <div class="jumbotron">
@@ -29,20 +28,31 @@
       <p>Find a Mentor &middot; Find a Mentee &middot; Team 1</p>
     </div>
 
-<!--       DELETE THIS LATER -->
-      <a href="/">Go Home</a>
-      <hr>
-      <a href="../">Back to Messages</a>  
-      <hr>    
-<!--    <ol>
-    {{#each projects}}
-      <li><a href="#project{{id}}">{{name}}</a></li>
-    {{/each}}
-  </ol> -->
+  <div class="container">   
 
-<!--    <a href="/messages">View Messages</a>
- -->
     <center><h4>VIEW MESSAGE:</h4></center>
+<hr>
+    <div class="project" id="reciever">
+      <h5>{{viewmessageName}}</h5>
+    </div>
+
+    <div class="message">
+      <p>{{message}}</p>
+    </div>
+
+    <div class="mymessage">
+    </div>
+<hr>
+<br>
+    <div class="sentMessage">
+      <h3>Send Message</h3>
+      <div class="sendBox">
+        <input type="text" class="form-control" id="message" placeholder="Message" name="message">    
+        <a href="#" id="submitBtn" class="btn btn-default" value="Send">Send</a>
+      </div>
+    </div>
+
+</div>
     <!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
     <!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
     <!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
@@ -72,8 +82,23 @@
     </div>
     {{/each}} -->
 
+<!-- NAV STARTS HERE -->
+<div id="nav">
+<ul id="navigation">
+<ul id="navigation">
+<li><a href="/"><img src="../../images/homeicon.png" alt="Home image" class="homeimg"></a></li>
+<li><a href="../"><img src="../../images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
+<li><a href="settings/"><img src="../../images/settings.png" alt="Settings image" class="settingsimg"></a></li>
+<li><a href="FAQ/">FAQ</a></li>
+</ul>
+</div>
+<!-- NAV ENDS HERE -->
+
+
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/introHCI.js"></script>
+  
 </body>
 </html>

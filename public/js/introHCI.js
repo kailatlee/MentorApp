@@ -10,4 +10,10 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// add any functionality and listeners you want here
+	$('#submitBtn').click(sendMessage);
+}
+
+function sendMessage(e) {
+	e.preventDefault();
+	$(".mymessage").append("How's it going?");
 }
