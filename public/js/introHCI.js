@@ -15,5 +15,5 @@ function initializePage() {
 
 function sendMessage(e) {
 	e.preventDefault();
-	$(".mymessage").append("How's it going?");
+	$(".mymessage").append($("#message").val() + "<br/>");
 }
