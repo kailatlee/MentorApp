@@ -21,20 +21,25 @@
 <body>
 
 		<div class="jumbotron">
-			<a href="messages/"><img src="images/messageIcon.png" alt="Message image" class="img"></a>
+			<a href="/"><img src="images/messageIcon.png" alt="Message image" class="img"></a>
 			<h1>MentorApp</h1>
 			<p>Find a Mentor &middot; Find a Mentee</p>
 		</div>
 
 	<div class="container">
 		<center><img src="../images/settings.png" alt="Settings image" class="settingsimg"></center>
-		 <h3>My Name:</h3> <input type="text" name="fname"><br>
-  		<h3>My Major:</h3> <input type="text" name="lname"><br>
+<!-- 		 <h3>My Name:</h3> <input type="text" name="fname"><br> -->
+  		<h3>My Major:</h3>
+  		<div class="project" id="mymajor">
+  		</div>
   		<br>
-  		<a href="/login" class="btn btn-default center-block">Save</a>
+  		<input type="text" class="form-control" id="userMajor" placeholder="Major" name="major">   
+  		<a href="" id="saveBtn" class="btn btn-default center-block" id="saveMajor">Save</a>
 		<hr>
 		<a href="/login" class="btn btn-default center-block">Log Out</a>
-</div>
+	</div>
+
+
 
 <!-- NAV STARTS HERE -->
 <div id="nav">
@@ -50,5 +55,6 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/introHCI.js"></script>
 </body>
 </html>

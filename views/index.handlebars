@@ -20,23 +20,47 @@
 
 <body>
 		<div class="jumbotron">
-<!-- 			<a href="/"><img src="images/logo.jpg" alt="Message image" class="img"></a> -->
 			<a href="/"><img class="img"></a>
 			<h1>MentorApp</h1>
 			<p>Find a Mentor &middot; Find a Mentee </p>
 		</div>
 
 <div class="container"> 
-		<center><h4>MATCHES:</h4></center>
+
+<!-- DROPDOWN STARTS -->
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">I am looking for a...
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#" id="mentor">Mentor</a></li>
+    <li><a href="#" id="mentee">Mentee</a></li>
+  </ul>
+</div>
+<!-- DROPDOWN ENDS -->
+
+</br>
+
+<center><h4>MATCHES:</h4></center>
 
 {{#each matchesList}}
-<div class="project">
-	<a href="project/{{name}}" class="thumbnail">
-		<img src="{{image}}" class="profilepic">
-		<font color="black"><h3>{{name}}</h3></font>
-		<font color="black"><p>{{major}}</p></font>
-	</a>
-</div>
+
+<div class="card">
+	
+
+                <div class="avatar">
+                    <a href="project/{{name}}" class="thumbnail"><img src="{{image}}" alt="" /></a>
+                </div>
+                <div class="content">
+                    <a href="project/{{name}}" class="thumbnail">
+                    	<font color="black"><h3>{{name}}</h3></font>
+                    	<p>Web Developer <br>
+                       {{major}}</p></a>
+
+                    <p><a href="/messages" class="btn btn-default center-block">Message</a></p>
+                </div>
+            </div>
+</br>
+
 {{/each}}
 
 </div>
