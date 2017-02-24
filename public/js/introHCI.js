@@ -17,6 +17,16 @@ function initializePage() {
 			sendMessage(e);
 		}
 	});
+	$('.dropdown').click(addFAQDetails);
+}
+
+function addFAQDetails(e){
+	e.preventDefault();
+
+	var faqID = $(this).closest('.dropdown').attr('id');
+	var idNumber = faqID.substr('project'.length);
+
+	$get("/FAQ/" + idNumber, callBackFn);
 }
 
 function sendMessage(e) {

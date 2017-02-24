@@ -302,6 +302,15 @@ body
  margin:0px;
 }
 
+#menu1 {
+  position: center;
+  width: 375px;
+}
+
+#menu2 {
+  position: center;
+  width: 375px;
+}
 
 
 

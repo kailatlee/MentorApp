@@ -14,3 +14,12 @@ function renderQ2(){
 	$("#drop2").toggle();
 }
 
+// var list = require('../FAQ.json');
+
+// exports.FAQInfo = function(req, res) {
+// 	var faqID = req.params.id;
+// 	faqID = parseInt(faqID);
+
+// 	var faq = list[faqID-1];
+// 	res.json(faq);
+// }
