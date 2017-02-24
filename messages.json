@@ -2,13 +2,8 @@
 	
 	"messagesList":
 	[
-		{"name": "John Doe", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "Hi!"},
-		{"name": "Jane Doe", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "Hello!"},
 		{"name": "Kaila Lee", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "Hey!"},
 		{"name": "Jenn Chan", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "Hello."},
-		{"name": "Julia Connly", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "How are you doing?"},
-		{"name": "Kobe Bryant", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "Hey!"},
-		{"name": "Ellen Degeneres", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "Hey!"},
-		{"name": "Steph Curry", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "Hey!"}
+		{"name": "Julia Connly", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "message": "How are you doing?"}
 	]
 }

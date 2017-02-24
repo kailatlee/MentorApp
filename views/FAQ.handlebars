@@ -27,23 +27,27 @@
 		</div>
 
 		<center><h4>FAQ</h4></center>
-		<div class="container">
-		<div class="project">
-			<p><b>What is the purpose of MentorApp?</b></p>
-			<div class="project-description">
-				<p>MentorApp is a mobile app that provides users the opportunity to connect with those
-					in their professional network and exchange career-oriented advice and aspirations.</p>
-			</div>
-		</div>
-		<hr>
-		<div class="project">
-			<p><b>Who can use MentorApp?</b></p>
-		<div class="project-description">
-			<p>Anyone is welcome to create and profile and start connecting!</p>
-		</div>
-	</div
+		<div class="container"> 
+		<div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" onclick="renderQ1()"><b>What is the purpose of MentorApp?</b>
+			<span class="caret"></span></button>
+			<ul class="dropdown-menu" id="drop1">
+				<p id="answer1">""</p>
+			</ul>
+		</div><br>
+
+		<br></br>
+
+		<div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" id="menu2" type="button" data-toggle="dropdown" onclick="renderQ2()"><b>Who can use MentorApp?</b>
+			<span class="caret"></span></button>
+			<ul class="dropdown-menu" id="drop2">
+				<p id="answer2">""</p>
+			</ul>
+		</div><br>
 </div>
-</div>
+		
+
 
 <!-- NAV STARTS HERE -->
 <div id="nav">
@@ -59,5 +63,6 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/faq.js"></script>
 </body>
 </html>

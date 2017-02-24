@@ -12,11 +12,26 @@ function initializePage() {
 	// add any functionality and listeners you want here
 	$('#submitBtn').click(sendMessage);
 	$('#saveBtn').click(addMajor);
+	$('#message').keypress(function(e) {
+		if (e.which == 13) {
+			sendMessage(e);
+		}
+	});
 }
 
 function sendMessage(e) {
 	e.preventDefault();
-	$(".mymessage").append($("#message").val() + "<br/>");
+
+	var receiver = $("h5").html();
+	var message = $("#message").val();
+	if (message == "") {
+		console.log("No message entere!");
+		return;
+	} else {
+		$("#myMessage").append("<br/>" + $("#message").val());
+	}
+
+	document.getElementById("message").value = "";
 }
 
 function addMajor(e) {

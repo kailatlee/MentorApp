@@ -18,10 +18,10 @@ body {
     overflow: scroll;
 }
 
-.container {
+/*.container {
     margin-bottom: 70px;
     overflow: scroll;
-}
+}*/
 
 .mymessage {
      left:0;
@@ -169,9 +169,42 @@ body {
 }
 
 .project a {
-     text-align: center;
+     text-align: left;
 }
 
+#messageName {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#messageM {
+  color: black;
+  font-size: 12px;
+}
+
+#myMessage {
+  text-align: right;
+}
+
+.dropdown-toggle {
+  opacity: 0.5;
+  width: 325px;
+  margin-right: 50px;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+.dropdown-menu {
+  width: 325px;
+  margin-right: 50px;
+  font-size: 20;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding right: 15px;
+  padding-bottom: 15px;
+
+}
 
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -316,6 +349,7 @@ img.avatar {
 .container {
     padding: 16px;
     margin-bottom:0;
+    overflow: scroll;
 }
 
 /* The "Forgot password" text */
