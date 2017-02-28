@@ -18,10 +18,7 @@ body {
     overflow: scroll;
 }
 
-/*.container {
-    margin-bottom: 70px;
-    overflow: scroll;
-}*/
+
 
 .mymessage {
      left:0;
@@ -43,6 +40,7 @@ body {
 /*Dropdown for mentor/mentee*/
 .dropdown {
     color: #A9A9A9;
+
 }
 
 .jumbotron {
@@ -66,8 +64,10 @@ body {
 
 
 
-
-
+#messagebtn {
+  width: 100px;
+  padding: 5px;
+}
 
 .center-block{
   padding: 10px;
@@ -86,21 +86,23 @@ body {
 .card {
   overflow: hidden;
   position: relative;
-  border: 1px solid #CCC;
-  border-radius: 8px;
+/*  border: 1px solid #CCC;
+  border-radius: 8px;*/
+  border: none;
   text-align: center;
   padding: 0;
-  background-color: #DCDCDC;
+  background-color: #f2f2f2;
   color: rgb(136, 172, 217);
 }
 
 .card a{
-      background-color: #DCDCDC;
+      background-color: #f2f2f2;
       border: none;
 }
 
 .card p{
     color: #000000;
+    border: none;
 }
 
 .card .header-bg {
@@ -110,13 +112,15 @@ body {
   left: 0;
   width: 100%;
   height: 70px;
-  border-bottom: 1px #FFF solid;
+/*  border-bottom: 1px #FFF solid;*/
   /* This positions the canvas under the text */
   z-index: 1;
 }
 .card .avatar {
+  margin-left: 15px;
   margin-top: 15px;
   z-index: 100;
+  border: none;
 }
 
 .card .avatar img {
@@ -128,25 +132,44 @@ body {
   border: 5px solid rgba(0,0,30,0.8);
 }
 
+.avatar img {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid rgba(0,0,30,0.8);
+}
+
+#projectAvatar {
+  padding-right: 20px;
+}
+
+
+.label {
+  float: left;
+  font-size: 16px;
+}
+
+/*form .input {
+  margin-left: 150px;
+}
+
+form .line {
+  margin-bottom: 18px;
+}*/
+
+
+#yellowStar a{
+  padding: 0px;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.nameMajor {
+  padding: 10px;
+}
 
 
 .jumbotron img{
@@ -403,5 +426,8 @@ span.psw {
     background: #007299;
     box-shadow: none;
 }
+
+
+
 
 

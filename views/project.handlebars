@@ -16,22 +16,47 @@
     <![endif]-->
   </head>
   <body>
-	<!-- this is a comment in HTML -->
-		<div class="jumbotron">
-        <a href="/"><img src="../images/home.png" alt="Message image" class="img"></a>
-  			<h1>{{projectName}}</h1>
-  			<p>Major: Cognitive Science B.S.</p>
-		</div>
+    <div class="jumbotron">
+      <a href="/"><img class="img"></a>
+      <h1>MentorApp</h1>
+      <p>Find a Mentor &middot; Find a Mentee </p>
+    </div>
 
   <div class="container">
-<!--       DELETE THIS LATER -->
-<a href="/"><img src="../images/head.jpg" alt="Home image" class="homeimg"></a>
-      <p>My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design. One focus of our recent work — inspired by the design studio — is enabling peer learning online. This work, used in hundreds of massive online classes, has created techniques for effective global-scale peer assessment of creative work and small-group video discussions among learners from diverse cultures. </p>
+
+ 
+   <script>
+    var cnt=0;
+    function CountFun(){
+     cnt=parseInt(cnt)+parseInt(1);
+     var divData=document.getElementById("showCount");
+     divData.innerHTML="Stars: "+cnt +"";
+    }
+   </script>
 
 
-<a href="/messages/viewmessages/{{projectName}}" class="btn btn-default center-block">Message</a>
+    <div class="avatar" id="projectAvatar">
+        <img src="http://lorempixel.com/400/400/people" alt="" style="float:left"/>
+    </div>
+
+<center style="float:left" class="nameMajor"> <h3>{{projectName}}</h3>
+<h6>{{major}}</h6> </center>
+
+  </br>
+  <center class="starCount">
+   <a href="#" class="btn btn-default" id="yellowStar" onclick="CountFun();"><img src="../images/star.png" width="30" height="30"> </a>
+   <div id="showCount">Stars:</div>
+ </center>
+
+
+
+<hr>
+<p>{{description}}<p>
+<hr>
+<a href="/messages/viewmessages/{{projectName}}" class="btn btn-default center-block">Message {{projectName}}</a>
 </div>
-  </div>
+
+</div>
 <!-- 
     <div class="row">
       <div class="col-md-6">

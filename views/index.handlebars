@@ -29,7 +29,7 @@
 
 <!-- DROPDOWN STARTS -->
 <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">I am looking for a...
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><font size="3"color="black">I am looking for a...</font>
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
     <li><a href="#" id="mentor">Mentor</a></li>
@@ -48,15 +48,18 @@
 	
 
                 <div class="avatar">
-                    <a href="project/{{name}}" class="thumbnail"><img src="{{image}}" alt="" /></a>
+                    <a href="project/{{name}}" class="thumbnail" style="float:left"><img src="{{image}}" alt="" /></a>
                 </div>
+
                 <div class="content">
+
                     <a href="project/{{name}}" class="thumbnail">
+
                     	<font color="black"><h3>{{name}}</h3></font>
                     	<p>Web Developer <br>
                        {{major}}</p></a>
 
-                    <p><a href="messages/viewmessages/{{name}}" class="btn btn-default center-block">Message</a></p>
+                    <p><a href="messages/viewmessages/{{name}}" class="btn btn-default" id="messagebtn">Message</a></p>
                 </div>
             </div>
 </br>

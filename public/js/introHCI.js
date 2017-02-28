@@ -12,6 +12,8 @@ function initializePage() {
 	// add any functionality and listeners you want here
 	$('#submitBtn').click(sendMessage);
 	$('#saveBtn').click(addMajor);
+	$('#saveBtn').click(addName);
+	$('#saveBtn').click(addDescription);
 	$('#message').keypress(function(e) {
 		if (e.which == 13) {
 			sendMessage(e);
@@ -49,6 +51,15 @@ function addMajor(e) {
 	$(".project").html($("#userMajor").val() + "<br/>");
 }
 
+function addName(e) {
+	e.preventDefault();
+	$(".nameInput").html($("#userName").val() + "<br/>");
+}
+
+function addDescription(e) {
+	e.preventDefault();
+	$(".descriptionInput").html($("#userDescription").val() + "<br/>");
+}
 
 // SORT THROUGH MATCHES - 0 IS MENTOR AND 1 IS MENTEE
 // function displayMatches() {
