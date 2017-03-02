@@ -19,6 +19,13 @@ body {
 }
 
 
+.header {
+  font-size: 18px;
+  padding-left: 30px;
+  padding-top: 0px;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #787474;
+}
 
 .mymessage {
      left:0;
@@ -212,15 +219,16 @@ form .line {
 
 .dropdown-toggle {
   opacity: 0.5;
-  width: 325px;
-  margin-right: 50px;
+  width: 150px;
+  margin-right: 0px;
   font-size: 12px;
   font-family: Arial;
 }
 
 .dropdown-menu {
-  width: 325px;
-  margin-right: 50px;
+  width: 50px;
+  margin-left: 185px;
+  margin-right: 10px;
   font-size: 20;
   padding-top: 15px;
   padding-left: 15px;
@@ -269,6 +277,14 @@ and (max-device-width : 480px) {
  margin-left:50px;
  font-weight:bold;
  float:left;
+}
+
+.backimg {
+  position: left;
+  left: 500px;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
 }
 
 .mailimg {
@@ -428,6 +444,52 @@ span.psw {
 }
 
 
+
+#drop1 {
+  width: 375px;
+  margin-left: 0px;
+}
+#drop2 {
+  width: 375px;
+  margin-left: 0px;
+}
+
+
+
+/*CAROUSEL CSS*/
+.carousel-inner{
+
+height: 280px;
+
+border-radius: 25px;
+
+border: 2px solid ##FEF9F9;
+
+padding: 10px;
+
+width: 100%;
+
+}
+
+
+
+.item.active {
+
+height: 280px;
+
+width: 100%;
+
+background-color: #FFFFFF;
+
+}
+
+
+
+.carouselCard {
+
+height: 260px;
+
+}
 
 
 

@@ -31,9 +31,4 @@ exports.viewProject = function(req, res) {
 	});
 }
 
- var inc=0;
- function myFunction() {
-    inc=inc+1;
-    alert(inc);    
- }
 

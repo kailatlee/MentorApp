@@ -17,6 +17,7 @@ var viewmessages = require('./routes/viewmessages');
 var FAQ = require('./routes/FAQ');
 var settings = require('./routes/settings');
 var login = require('./routes/login');
+var carousel = require('./routes/carousel');
 
 var app = express();
 
@@ -50,6 +51,7 @@ app.get('/messages/viewmessages/:name', viewmessages.viewViewmessages);
 app.get('/FAQ', FAQ.viewFAQ);
 app.get('/settings', settings.viewSettings);
 app.get('/login', login.viewLogin);
+app.get('/carousel', carousel.viewCarousel);
 
 
 http.createServer(app).listen(app.get('port'), function(){
