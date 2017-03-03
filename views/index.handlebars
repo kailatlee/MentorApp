@@ -43,10 +43,11 @@
 
 <center><h4>MATCHES:</h4></center>
 
+
 {{#each matchesList}}
 
-<div class="card" id="{{name}}">
-	
+<div class="card" id="{{status}}">
+  
 
                 <div class="avatar">
                     <a href="project/{{name}}" class="thumbnail" style="float:left"><img src="{{image}}" alt="" /></a>
@@ -56,8 +57,8 @@
 
                     <a href="project/{{name}}" class="thumbnail">
 
-                    	<font color="black"><h3>{{name}}</h3></font>
-                    	<p>Web Developer <br>
+                      <font color="black"><h3>{{name}}</h3></font>
+                      <p>Web Developer <br>
                        {{major}}</p></a>
 
                     <p><a href="messages/viewmessages/{{name}}" class="btn btn-default" id="messagebtn">Message</a></p>
@@ -69,16 +70,20 @@
 
 </div>
 
+
+
+
+
+
 <!-- NAV STARTS HERE -->
 <div id="nav">
-<ul id="navigation">
-<ul id="navigation">
+
 <li><img src="images/backarrow.png" alt="Back image" class="backimg"></li>
 <li><a href="/"><img src="images/homeicon.png" alt="Home image" class="homeimg"></a></li>
 <li><a href="messages/"><img src="images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
 <li><a href="settings/"><img src="images/settings.png" alt="Settings image" class="settingsimg"></a></li>
 <li><a href="FAQ/">FAQ</a></li>
-</ul>
+
 </div>
 <!-- NAV ENDS HERE -->
 

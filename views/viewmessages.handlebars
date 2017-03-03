@@ -32,12 +32,18 @@
 
     <center><h4>VIEW MESSAGE:</h4></center>
     <hr>
+
     <div class="project" id="reciever">
-      <h5>{{viewmessageName}}</h5>
+      <a href="../../project/{{viewmessageName}}"><h5 style="float:left">{{viewmessageName}}</h5></a><a href="../../settings"><h5 style="float:right">Me</h5></a>
     </div>
+</br>
+</br>
 
     <div class="message">
       <p id="theirMessage">{{message}}</p>
+    </div>
+    <div class="time">
+      <center><p id="timestamp"></p></center>
     </div>
 
     <div class="mymessage">
@@ -49,6 +55,7 @@
       <div class="sendBox">
         <input type="text" class="form-control" id="message" placeholder="Message" name="message">    
       <a href="#" id="submitBtn" class="btn btn-default" value="Send">Send</a>
+      <div class="timeInput" id="mytime"></div>
       </div>
     </div>
 
@@ -84,14 +91,13 @@
 
 <!-- NAV STARTS HERE -->
 <div id="nav">
-<ul id="navigation">
-<ul id="navigation">
+
 <li><img src="../../images/backarrow.png" alt="Back image" class="backimg"></li>
 <li><a href="/"><img src="../../images/homeicon.png" alt="Home image" class="homeimg"></a></li>
 <li><a href="../"><img src="../../images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
 <li><a href="../../settings/"><img src="../../images/settings.png" alt="Settings image" class="settingsimg"></a></li>
 <li><a href="../../FAQ/">FAQ</a></li>
-</ul>
+
 </div>
 <!-- NAV ENDS HERE -->
 
