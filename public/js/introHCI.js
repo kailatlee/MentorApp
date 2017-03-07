@@ -30,6 +30,8 @@ function initializePage() {
 	$($('.item')[0]).addClass("active");
 	console.log("works");
 
+	$('#clickTest').click(ga("send", "event", 'like', 'click'));
+
 }
 
 function back() {
@@ -105,7 +107,7 @@ function displayMentees() {
  //  $.get("/data.json", function(result){
  //    console.log(result);
  //    // array = result;
- //    for (var i = 0; i < result.length; i++) { 
+ //    for (var i = 0; i < result.length; i++) {
  //    console.log("hi");
  //  }
  //  });
@@ -121,7 +123,7 @@ function callBackFn(result) {
 		$("#1.card").hide();
 	} else {
 		$("#0.card").hide();
-		$("#1.card").show();		
+		$("#1.card").show();
 	}
 }
 
@@ -155,5 +157,3 @@ function timeStamp() {
 //     console.log("yes");
 //     e.preventDefault();// prevent the default anchor functionality
 // });
-
-

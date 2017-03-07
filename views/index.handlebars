@@ -43,19 +43,58 @@
 
 <center><h4>MATCHES:</h4></center>
 
+{{#if carousel}}
+<div class="carousel-inner" role="listbox">
 
+{{#each matchesList}}
+
+	<div class="item">
+<div class="card" id="carouselCard">
+<div class="avatar" style="float:left">
+<a href="project/{{name}}" class="thumbnail" id="clickTest"><img src="{{image}}" alt="" /></a>
+</div>
+
+<div class="content">
+			<a href="project/{{name}}" class="thumbnail">
+							<font color="black"><h3>{{name}}</h3></font>
+								<p>Web Developer <br>
+									{{major}}</p></a>
+						<p><a href="messages/viewmessages/{{name}}" class="btn btn-default center-block">Message</a></p>
+
+<br>
+
+<div class="description" style="float:left">
+<a href="project/{{name}}" class="thumbnail">
+<font color="black"><p>{{description}}</p></font></a>
+						</div>
+				</div>
+	</div>
+</div>
+{{/each}}
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+</div>
+{{else}}
 {{#each matchesList}}
 
 <div class="card" id="{{status}}">
 
 
                 <div class="avatar">
-                    <a href="project/{{name}}" class="thumbnail" style="float:left"><img src="{{image}}" alt="" /></a>
+                    <a href="project/{{name}}" class="thumbnail" id="clickTest" style="float:left"><img src="{{image}}" alt="" /></a>
                 </div>
 
                 <div class="content">
 
-                    <a href="project/{{name}}" class="thumbnail">
+                    <a href="project/{{name}}" class="thumbnail" id="clickTest">
 
                       <font color="black"><h3>{{name}}</h3></font>
                       <p>Web Developer <br>
@@ -67,8 +106,7 @@
 </br>
 
 {{/each}}
-
-</div>
+{{/if}}
 
 
 
