@@ -12,4 +12,4 @@ exports.view = function(req, res){
 exports.viewCarousel = function(req,res){
   data["carousel"] = true;
   res.render('index', data);
-}
+};
